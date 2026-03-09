@@ -1,14 +1,14 @@
 package inheritence;
 
-class earphone{
+class Earphone{
 	String brand;
 	int price;
 	
-	earphone(){
+	Earphone(){
 		this.brand="not given";
 		this.price=200;
 	}
-	earphone(String brand, int price) {
+	Earphone(String brand, int price) {
 		this.brand = brand;
 		this.price = price;
 	}
@@ -30,15 +30,15 @@ class earphone{
 	}
 }//super class earphone ends here
 
-class wiredearphone extends earphone{
+class WiredEarphone extends Earphone{
 	int length;
 	String type;
 	
-	wiredearphone(){
+	Wiredearphone(){
 		this.length=20;
 		this.type="Not given";
 	}
-	wiredearphone(String brand,int price,int length, String type) {
+	Wiredearphone(String brand,int price,int length, String type) {
 		super(brand,price);
 		this.length = length;
 		this.type = type;
@@ -63,15 +63,15 @@ class wiredearphone extends earphone{
 	}
 }//class wiredearphone ends here
 
-class wirelessearphone extends earphone{
+class Wirelessearphone extends Earphone{
 	int batteryMah;
 	String chargertype;
 	
-	wirelessearphone(){
+	Wirelessearphone(){
 		this.batteryMah=5000;
 		this.chargertype="Notgiven";
 	}
-	wirelessearphone(String brand,int price,int batteryMah, String chargertype) {
+	Wirelessearphone(String brand,int price,int batteryMah, String chargertype) {
 		super(brand,price);
 		this.batteryMah = batteryMah;
 		this.chargertype = chargertype;
@@ -97,11 +97,11 @@ class wirelessearphone extends earphone{
 }//class wirelessearphone ends here
 
 
-public class earphoneinheritence {
+public class TestEarphoneInheritence {
 
 	public static void main(String[] args) {
 		
-		wiredearphone e1=new wiredearphone(); 
+		Wiredearphone e1=new Wiredearphone(); 
 
 		e1.setBrand("OnePlus");
 		e1.setPrice(1200);
@@ -109,7 +109,7 @@ public class earphoneinheritence {
 		e1.setType("Copper");
 		e1.display();
 		
-		wirelessearphone e2=new wirelessearphone();
+		Wirelessearphone e2=new Wirelessearphone();
 		e2.setBrand("Realme");
 		e2.setPrice(2000);
 		e2.setBatteryMah(4000);
@@ -118,3 +118,4 @@ public class earphoneinheritence {
 	}
 
 }
+
