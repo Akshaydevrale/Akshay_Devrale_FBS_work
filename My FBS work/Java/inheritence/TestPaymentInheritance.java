@@ -95,7 +95,7 @@ class Upipayment extends Payment{
 	}
 }//class upiid ends here
 
-public class paymentinheritance {
+public class TestPaymentInheritance {
 
 	public static void main(String[] args) {
 		Creditcardpayment c1=new Creditcardpayment();
@@ -115,3 +115,4 @@ public class paymentinheritance {
 	}
 
 }
+
