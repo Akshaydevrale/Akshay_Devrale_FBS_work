@@ -1,16 +1,16 @@
 package inheritence;
 
-class vehicle{
+class Vehicle{
 	int id;
 	String brand;
 	double price;
 	
-	vehicle(){
+	Vehicle(){
 		this.id=738;
 		this.brand="Not given";
 		this.price=1000;
 	}
-	vehicle(int id, String brand, double price) {
+	Vehicle(int id, String brand, double price) {
 		this.id = id;
 		this.brand = brand;
 		this.price = price;
@@ -40,17 +40,17 @@ class vehicle{
 	}
 }//super class vehicle ends here
 
-class car extends vehicle{
+class Car extends Vehicle{
 	int noofAirbags;
 	String sunrooftype;
 	String drivemode;
 	
-	car(){
+	Car(){
 		this.noofAirbags=1;
 		this.sunrooftype="Not given";
 		this.drivemode="Not given";
 	}
-	car(int id,String brand,int price,int noofAirbags, String sunrooftype, String drivemode) {
+	Car(int id,String brand,int price,int noofAirbags, String sunrooftype, String drivemode) {
 		super(id,brand,price);
 		this.noofAirbags = noofAirbags;
 		this.sunrooftype = sunrooftype;
@@ -82,15 +82,15 @@ class car extends vehicle{
 	}
 }//class car ends here
 
-class bike extends vehicle{
+class Bike extends Vehicle{
 	String startmechanism;
 	String extraswitch;
 	
-	bike(){
+	Bike(){
 		this.startmechanism="Not given";
 		this.extraswitch="Not given";
 	}
-	bike(int id,String brand,int price,String startmechanism, String extraswitch) {
+	Bike(int id,String brand,int price,String startmechanism, String extraswitch) {
 		super(id,brand,price);
 		this.startmechanism = startmechanism;
 		this.extraswitch = extraswitch;
@@ -115,17 +115,17 @@ class bike extends vehicle{
 	
 }//class bike ends here
 
-class bus extends vehicle{
+class Bus extends Vehicle{
 	int standingcapacity;
 	int doors;
 	String ticketsystem;
 	
-	bus(){
+	Bus(){
 		this.standingcapacity=10;
 		this.doors=2;
 		this.ticketsystem="Not given";
 	}
-	bus(int id,String brand,int price,int standingcapacity, int doors, String ticketsystem) {
+	Bus(int id,String brand,int price,int standingcapacity, int doors, String ticketsystem) {
 		super(id,brand,price);
 		this.standingcapacity = standingcapacity;
 		this.doors = doors;
@@ -157,10 +157,10 @@ class bus extends vehicle{
 	}
 }//class bus ends here
 
-public class vehicleinheritence {
+public class TestVehicleInheritence {
 
 	public static void main(String[] args) {
-		car c1=new car();
+		Car c1=new Car();
 		c1.setId(239392);
 		c1.setBrand("Tata");
 		c1.setPrice(2200000);
@@ -169,7 +169,7 @@ public class vehicleinheritence {
 		c1.setDrivemode("Sports");
 		c1.display();
 		
-		bike b1=new bike();
+		Bike b1=new Bike();
 		b1.setId(23323);
 		b1.setBrand("Baja");
 		b1.setPrice(200000);
@@ -177,7 +177,7 @@ public class vehicleinheritence {
 		b1.setExtraswitch("Kill switch");
 		b1.display();
 		
-		bus b2=new bus();
+		Bus b2=new Bus();
 		b2.setId(2343);
 		b2.setBrand("Volvo");
 		b2.setPrice(4400000);
@@ -189,3 +189,4 @@ public class vehicleinheritence {
 	}
 
 }
+
