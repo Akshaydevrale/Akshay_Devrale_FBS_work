@@ -50,19 +50,19 @@ class Employee{
 	
 }//class Employee ends here
 
-class salesmanager extends Employee
+class Salesmanager extends Employee
 {
 	int incentive;
 	int target;
 	
-	salesmanager(){
+	Salesmanager(){
 		
 		super();
 		this.incentive=10000;
 		this.target=99;
 	}
 
-	salesmanager(int id,String name,double salary,int incentive, int target) {
+	Salesmanager(int id,String name,double salary,int incentive, int target) {
 		super(id,name,salary);
 		this.incentive = incentive;
 		this.target = target;
@@ -92,16 +92,16 @@ class salesmanager extends Employee
 	
 }//class salesmanger ends here
 
-class hr extends Employee
+class Hr extends Employee
 {
 	int commission;
 	
-	hr(){
+	Hr(){
 		super();
 		this.commission=20000;
 	}
 
-	hr(int commission) {
+	Hr(int commission) {
 		super();
 		this.commission = commission;
 	}
@@ -146,11 +146,11 @@ class Admin extends Employee{
 	}
 }//class Admin ends here
 
-public class employeeinheritence {
+public class TestEmployeeInheritence {
 
 	public static void main(String[] args) {
 		
-		salesmanager s1=new salesmanager();//salesmanager object
+		Salesmanager s1=new Salesmanager();//salesmanager object
 		
 		s1.setId(20);
 		s1.setName("Tamble");
@@ -159,7 +159,7 @@ public class employeeinheritence {
 		s1.setTarget(100);
 		s1.display();
 		
-		hr h1=new hr();//hr object 
+		Hr h1=new Hr();//hr object 
 		
 		h1.setId(99);
 		h1.setName("indori");
@@ -177,3 +177,4 @@ public class employeeinheritence {
 	}
 
 }
+
