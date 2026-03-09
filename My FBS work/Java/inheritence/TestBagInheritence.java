@@ -98,7 +98,7 @@ class travellingbag extends Bag {
 	}
 }//class travellingbag ends here
 
-public class baginheritence {
+public class TestBagInheritence {
 
 	public static void main(String[] args) {
 		schoolbag s1=new schoolbag();
@@ -118,3 +118,4 @@ public class baginheritence {
 	}
 
 }
+
