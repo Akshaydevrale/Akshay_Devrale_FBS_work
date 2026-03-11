@@ -86,16 +86,16 @@ class salesmanager extends Employee
 	
 }//class salesmanger ends here
 
-class hr extends Employee
+class Hr extends Employee
 {
 	int commission;
 	
-	hr(){
+	Hr(){
 		super();
 		this.commission=20000;
 	}
 
-	hr(int id,String name,double salary,int commission) {
+	Hr(int id,String name,double salary,int commission) {
 		super(id,name,salary);
 		this.commission = commission;
 	}
@@ -152,7 +152,7 @@ public class Test2 {
 		e1.calsal();
 		e1.display();
 		
-		e1=new hr(20,"Dhobi",50000,25000);	//upcasting
+		e1=new Hr(20,"Dhobi",50000,25000);	//upcasting
 		e1.calsal();
 		e1.display();
 		
@@ -164,3 +164,4 @@ public class Test2 {
 	
 
 }
+
