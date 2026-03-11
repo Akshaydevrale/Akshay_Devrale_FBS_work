@@ -1,16 +1,16 @@
 package polymorphism;
 
-class vehicle{
+class Vehicle{
 	int id;
 	String brand;
 	double price;
 	
-	vehicle(){
+	Vehicle(){
 		this.id=738;
 		this.brand="Not given";
 		this.price=1000;
 	}
-	vehicle(int id, String brand, double price) {
+	Vehicle(int id, String brand, double price) {
 		this.id = id;
 		this.brand = brand;
 		this.price = price;
@@ -40,17 +40,17 @@ class vehicle{
 	}
 }//super class vehicle ends here
 
-class car extends vehicle{
+class Car extends Vehicle{
 	int noofAirbags;
 	String sunrooftype;
 	String drivemode;
 	
-	car(){
+	Car(){
 		this.noofAirbags=1;
 		this.sunrooftype="Not given";
 		this.drivemode="Not given";
 	}
-	car(int id,String brand,int price,int noofAirbags, String sunrooftype, String drivemode) {
+	Car(int id,String brand,int price,int noofAirbags, String sunrooftype, String drivemode) {
 		super(id,brand,price);
 		this.noofAirbags = noofAirbags;
 		this.sunrooftype = sunrooftype;
@@ -82,15 +82,15 @@ class car extends vehicle{
 	}
 }//class car ends here
 
-class bike extends vehicle{
+class Bike extends Vehicle{
 	String startmechanism;
 	String extraswitch;
 	
-	bike(){
+	Bike(){
 		this.startmechanism="Not given";
 		this.extraswitch="Not given";
 	}
-	bike(int id,String brand,int price,String startmechanism, String extraswitch) {
+	Bike(int id,String brand,int price,String startmechanism, String extraswitch) {
 		super(id,brand,price);
 		this.startmechanism = startmechanism;
 		this.extraswitch = extraswitch;
@@ -116,17 +116,17 @@ class bike extends vehicle{
 	
 }//class bike ends here
 
-class bus extends vehicle{
+class Bus extends Vehicle{
 	int standingcapacity;
 	int doors;
 	String ticketsystem;
 	
-	bus(){
+	Bus(){
 		this.standingcapacity=10;
 		this.doors=2;
 		this.ticketsystem="Not given";
 	}
-	bus(int id,String brand,int price,int standingcapacity, int doors, String ticketsystem) {
+	Bus(int id,String brand,int price,int standingcapacity, int doors, String ticketsystem) {
 		super(id,brand,price);
 		this.standingcapacity = standingcapacity;
 		this.doors = doors;
@@ -163,16 +163,17 @@ public class Test4 {
 
 	public static void main(String[] args) {
 		
-		vehicle v1;
-		v1=new car(44,"Supra",37388888,4,"Panaromic","Sports");
+		Vehicle v1;
+		v1=new Car(44,"Supra",37388888,4,"Panaromic","Sports");
 		v1.display();
 		
-		v1=new bike(4448,"Bajaj",150000,"kickstart","Kill switch");
+		v1=new Bike(4448,"Bajaj",150000,"kickstart","Kill switch");
 		v1.display();
 		
-		v1=new bus(10,"Tata",4000000,45,4,"Online");
+		v1=new Bus(10,"Tata",4000000,45,4,"Online");
 		v1.display();
 
 	}
 
 }
+
