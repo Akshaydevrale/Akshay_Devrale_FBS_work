@@ -1,14 +1,14 @@
 package polymorphism;
 
-class earphone{
+class Earphone{
 	String brand;
 	int price;
 	
-	earphone(){
+	Earphone(){
 		this.brand="not given";
 		this.price=200;
 	}
-	earphone(String brand, int price) {
+	Earphone(String brand, int price) {
 		this.brand = brand;
 		this.price = price;
 	}
@@ -30,15 +30,15 @@ class earphone{
 	}
 }//super class earphone ends here
 
-class wiredearphone extends earphone{
+class Wiredearphone extends Earphone{
 	int length;
 	String type;
 	
-	wiredearphone(){
+	Wiredearphone(){
 		this.length=20;
 		this.type="Not given";
 	}
-	wiredearphone(String brand,int price,int length, String type) {
+	Wiredearphone(String brand,int price,int length, String type) {
 		super(brand,price);
 		this.length = length;
 		this.type = type;
@@ -62,15 +62,15 @@ class wiredearphone extends earphone{
 	}
 }//class wiredearphone ends here
 
-class wirelessearphone extends earphone{
+class Wirelessearphone extends Warphone{
 	int batteryMah;
 	String chargertype;
 	
-	wirelessearphone(){
+	Wirelessearphone(){
 		this.batteryMah=5000;
 		this.chargertype="Notgiven";
 	}
-	wirelessearphone(String brand,int price,int batteryMah, String chargertype) {
+	Wirelessearphone(String brand,int price,int batteryMah, String chargertype) {
 		super(brand,price);
 		this.batteryMah = batteryMah;
 		this.chargertype = chargertype;
@@ -99,13 +99,14 @@ class wirelessearphone extends earphone{
 public class Test7 {
 
 	public static void main(String[] args) {
-		earphone e1;
-		e1=new wiredearphone("Apple",12000,25,"Copper");
+		Earphone e1;
+		e1=new Wiredearphone("Apple",12000,25,"Copper");
 		e1.display();
 		
-		e1=new wirelessearphone("Realme",40000,1400,"C");
+		e1=new Wirelessearphone("Realme",40000,1400,"C");
 		e1.display();
 		
 	}
 
 }
+
