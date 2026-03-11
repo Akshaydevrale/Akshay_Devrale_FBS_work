@@ -62,15 +62,15 @@ class Schoolbag extends Bag{
 	}
 }//class schoolbag ends here
 
-class travelbag extends Bag{
+class Travelbag extends Bag{
 	int clothes;
 	String gadgets;
 	
-	travelbag(){
+	Travelbag(){
 		this.clothes=2;
 		this.gadgets="Not given";
 	}
-	travelbag(String brand,double price,int clothes,String gadgets){
+	Travelbag(String brand,double price,int clothes,String gadgets){
 		super(brand,price);
 		this.clothes=clothes;
 		this.gadgets=gadgets;
@@ -102,9 +102,10 @@ public class Test6 {
 		b1=new Schoolbag("skybag",6000,12,"Pen,pencil and etc");
 		b1.display();
 		
-		b1=new travelbag("American tourister",12000,30,"Camera,charger,etc");
+		b1=new Travelbag("American tourister",12000,30,"Camera,charger,etc");
 		b1.display();
 
 	}
 
 }
+
