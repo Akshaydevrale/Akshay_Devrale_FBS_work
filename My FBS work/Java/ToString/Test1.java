@@ -40,18 +40,18 @@ class Employee{
 	}
 	
 }//class employee ends here
-class salesmanager extends Employee
+class Salesmanager extends Employee
 {
 	int incentive;
 	int target;
 	
-	salesmanager(){
+	Salesmanager(){
 		
 		super();
 		this.incentive=10000;
 		this.target=99;
 	}
-	salesmanager(int id,String name,double salary,int incentive, int target) {
+	Salesmanager(int id,String name,double salary,int incentive, int target) {
 		super(id,name,salary);
 		this.incentive = incentive;
 		this.target = target;
@@ -76,15 +76,15 @@ class salesmanager extends Employee
 	
 }//class salesmanger ends here
 
-class hr extends Employee
+class Hr extends Employee
 {
 	int commission;
 	
-	hr(){
+	Hr(){
 		super();
 		this.commission=20000;
 	}
-	hr(int commission) {
+	Hr(int commission) {
 		super();
 		this.commission = commission;
 	}
@@ -131,10 +131,10 @@ public class Test1 {
 
 	public static void main(String[] args) {
 		Employee e1;
-		e1=new salesmanager(10,"Tony",45000,20000,100);
+		e1=new Salesmanager(10,"Tony",45000,20000,100);
 		System.out.println(e1);
 		
-		e1=new hr();
+		e1=new Hr();
 		System.out.println(e1);
 		
 		e1=new Admin(45,"Spider",2500,300);
@@ -143,3 +143,4 @@ public class Test1 {
 	}
 
 }
+
