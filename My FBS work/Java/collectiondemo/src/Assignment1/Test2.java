@@ -109,30 +109,3 @@ public class Test2 {
 	}
 
 }
-		
-		
-		
-		
-		
-		
-		
-//		List<Student> l1=new ArrayList<Student>();
-//		l1.add(new Student(10,"Sachin",99));
-//		l1.add(new Student(7,"Thala",35));
-//		l1.add(new Student(45,"Rohit",79));
-//		l1.add(new Student(18,"virat",55));
-//		
-//		System.out.println("List of Student");
-//		for(Student s1:l1)
-//		{
-//			System.out.println(s1);
-//		}
-//		
-//		System.out.println("Sort by Marks");
-//		Collections.sort(l1, new CompareMarks());
-//		System.out.println(l1);
-//		
-//		System.out.println("Sort by Name");
-//		Collections.sort(l1, new CompareName());
-//		System.out.println(l1);
-	
